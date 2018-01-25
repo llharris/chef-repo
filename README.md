@@ -1,4 +1,4 @@
 # chef-repo
 
-TODO: Enter the cookbook description here.
+Nothing to see here...
 
