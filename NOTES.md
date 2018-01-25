@@ -26,7 +26,7 @@ Use the chef generate app subcommand to generate a cookbook structure that:
 
 #### Bootstrap a Windows Node (with run-list)
 
-`knife 
+`knife` 
 
 #### Error Resolving Cookbooks for Run List
 
