@@ -6,7 +6,7 @@ description 'Installs/Configures wisa'
 long_description 'Installs/Configures wisa'
 version '0.1.0'
 chef_version '>= 12.1' if respond_to?(:chef_version)
-supports 'windows', '= 2012r2'
+supports 'windows'
 depends 'sql_server', '~> 5.3'
 
 # The `issues_url` points to the location where issues for this cookbook are
