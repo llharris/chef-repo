@@ -1,4 +1,4 @@
-# Chef Cheat-Sheet
+# Chef Quick Reference
 
 #### Generate a cookbook structure
 
