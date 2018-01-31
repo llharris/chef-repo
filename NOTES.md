@@ -26,7 +26,7 @@ Use the chef generate app subcommand to generate a cookbook structure that:
 
 #### Bootstrap a Windows Node (with run-list)
 
-`knife` 
+`knife bootstrap windows winrm [IP_ADDRESS] --winrm-user [USER] --winrm-password 'PASSWORD' --node-name node1-windows --run-list 'recipe[learn_chef_iis]'`
 
 #### Error Resolving Cookbooks for Run List
 
@@ -45,6 +45,15 @@ You haven't done a `knife cookbook upload [cookbook_name]`
 #### Execute a command inside a kitchen instance
 
 `kitchen exec -c 'command'`
+
+#### Run just test for Kitchen
+
+`kitchen verify`
+
+#### Test a cookbook with kitchen from start to finish on a new instance
+
+`kitchen destroy` - To remove any existing instances, then...
+`kitchen test`
 
 #### Testing Windows with Kitchen
 
@@ -78,7 +87,7 @@ description 'Installs/Configures wisa'
 long_description 'Installs/Configures wisa'
 version '0.1.0'
 chef_version '>= 12.1' if respond_to?(:chef_version)
-supports 'windows', '= 2012r2'
+supports 'windows'
 depends 'sql_server', '~> 5.3'
 
 # The `issues_url` points to the location where issues for this cookbook are
